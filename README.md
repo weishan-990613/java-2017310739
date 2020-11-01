@@ -3,26 +3,39 @@ java课程作业项目仓库
 # 阅读程序
 
 ## 实验目的
-用类描述计算机CPU的速度和硬盘容量
-## 实验过程
-1.在项目中创建包Pack1，然后再包Pack1中创建类；
-2.根据需求需要有最少四个类：PC、CPU、HardDisk、Test（主类）
-3.首先PC类中有speed和getspeed，并且getspeed()返回speed的值，然后创建setspeed(int speed)方法，将值赋给speed
-4.其次HardDisk类中有amouht和getamount()，且getA mount()返回amount的值，然后创建setAmount(int amount)方法，将值赋给amount
-5.根据UML图，在PC类中要求使用setCPU()方法将参数赋给cpu；使用setAmount()将参数赋给HD，再使用void show()和输出语句
-6.Test类中需要再main方法中分别创建CPU、HardDisk、PC的三个对象cpu、disk、pc，并为cpu和disk赋初始值2200和200
-7.pc以实参cpu调用setCPU方法、以实参disk调用setHardDsik方法
-8.最后调用PC中的void show()展示结果
+初步了解分析系统需求，从学生选课角度了解系统中的实体及其关系，学会定义类中的属性以及方法；
+掌握面向对象的类设计方法（属性、方法）；
+掌握类的继承用法，通过构造方法实例化对象；
+学会使用super()，用于实例化子类；
+掌握使用Object根类的toString（）方法,应用在相关对象的信息输出中。
 
+## 实验过程
+1.创建父类person，定义属性id，name，sex，addr(家庭住址)
+2.用extends方法创建子类student，定义新属性所选课程：selectcourse
+3.用extends方法创建子类teacher，定义新属性所授课程：shouke
+4.创建课程类course，定义属性(编号:course_id、课程名称:course_name、上课地点:classroom、时间:time、授课教师:teacher)
+5.在student类中创建方法xuanke和tuike并打印课程信息
+6.创建主函数main并创建学生实例zhangsan，在选课或退课成功时一起打印
 ## 核心方法
-1.CPU、HardDisk类中的setspeed(int speed)、setAmount(int amount)方法
-2.在需要赋值的地方使用this.方法
-3.main方法使用new创建对象、
-4.调用时使用类对象.方法进行调用
+1.使用extends继承父类方法创建子类
+2.使用new方法实例化对象
 
 ## 实验结果
-  2200
-  200
-  
+姓名：zhangsan 学号：1 性别：男 家庭住址：北京    
+退课成功！                 
+课程编号：101
+课程名称：Java
+上课地点：304
+上课时间：16:05
+授课教师：wang
+
+姓名：zhangsan 学号：1 性别：男 家庭住址：北京
+选课成功！
+课程编号：101
+课程名称：Java
+上课地点：304
+上课时间：16:05
+授课教师：wang
+
 ## 实验感想
-通过本次实验，我对课上学的类与对象的关系有了进一步的了解，并且学会怎么使用this.方法
+通过本次实验，我对之前学习的理论知识进行了实践，但对于继承的知识掌握的还很少，例如如何使用super()，希望以后多学习。
